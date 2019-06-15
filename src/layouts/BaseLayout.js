@@ -6,9 +6,7 @@ const BaseLayout = ({ children }) => (
   <>
     <Header />
     <main className="main bg-gray">
-      <div className="container grid-lg">
-        {children}
-      </div>
+      {children}
     </main>
     <Footer />
   </>

@@ -1,8 +1,12 @@
 import React from 'react';
+import Hero from '../components/Hero';
 
 const HomePage = () => (
   <>
-    <h1>HomePage</h1>
+    <Hero />
+    <div className="container grid-lg p-2">
+      Home Page
+    </div>
   </>
 );
 

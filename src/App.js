@@ -13,6 +13,7 @@ const App = () => (
     <Router>
       <BaseLayout>
         <Route exact path="/" component={HomePage} />
+        <Route exact path="/store" render={() => <h1>Store</h1>} />
       </BaseLayout>
     </Router>
   </>
