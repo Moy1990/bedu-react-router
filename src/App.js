@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // BrowserRouter: Subclass of Router. Use of HTML5 history API to sync your UI with the current browser
 // HashRouter: Previose router but only uses hash part of the URL.
 // MemoryRouter
@@ -10,15 +10,19 @@ import HomePage from './pages/HomePage';
 import StorePage from './pages/StorePage';
 import ProductPage from './pages/ProductPage';
 import BasketPage from './pages/BasketPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 const App = () => (
   <>
     <Router>
       <BaseLayout>
-        <Route exact path="/" component={HomePage} />
-        <Route exact path="/store" component={StorePage} />
-        <Route exact path="/product" component={ProductPage} />
-        <Route exact path="/basket" component={BasketPage} />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/store" component={StorePage} />
+          <Route exact path="/product" component={ProductPage} />
+          <Route exact path="/basket" component={BasketPage} />
+          <Route component={NotFoundPage} />
+        </Switch>
       </BaseLayout>
     </Router>
   </>

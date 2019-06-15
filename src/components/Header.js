@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Header = () => <header className="header navbar">
   <div className="container grid-lg">
@@ -8,14 +9,14 @@ const Header = () => <header className="header navbar">
       <div className="column col-12">
         <div className="navbar">
           <section className="navbar-section">
-            <a href="#" className="navbar-brand mr-2 text-dark text-bold">React Shop</a>
-            <a href="#" className="btn btn-link">Home</a>
-            <a href="#" className="btn btn-link">Store</a>
+            <Link to="/" className="navbar-brand mr-2 text-dark text-bold">React Shop</ Link>
+            <Link to="/" className="btn btn-link">Home</Link>
+            <Link to="/store" className="btn btn-link">Store</Link>
           </section>
           <section className="navbar-section">
-            <a href="#" className="btn btn-link text-dark">
+            <Link to="/basket" className="btn btn-link text-dark">
               <FontAwesomeIcon icon={faShoppingBasket} />
-            </a>
+            </Link>
           </section>
         </div>
       </div>

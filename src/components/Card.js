@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Card = ({ title, price, description }) => (
   <div className="card">
@@ -16,7 +17,7 @@ const Card = ({ title, price, description }) => (
       {description}
     </div>
     <div className="card-footer">
-      <button className="btn btn-block btn-primary">Buy</button>
+      <Link to="/basket" className="btn btn-block btn-primary">Buy</Link>
     </div>
   </div>
 );
