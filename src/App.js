@@ -7,13 +7,18 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 // StaticRouter: Used for static routing just like React Router v3.
 import BaseLayout from './layouts/BaseLayout';
 import HomePage from './pages/HomePage';
+import StorePage from './pages/StorePage';
+import ProductPage from './pages/ProductPage';
+import BasketPage from './pages/BasketPage';
 
 const App = () => (
   <>
     <Router>
       <BaseLayout>
         <Route exact path="/" component={HomePage} />
-        <Route exact path="/store" render={() => <h1>Store</h1>} />
+        <Route exact path="/store" component={StorePage} />
+        <Route exact path="/product" component={ProductPage} />
+        <Route exact path="/basket" component={BasketPage} />
       </BaseLayout>
     </Router>
   </>
