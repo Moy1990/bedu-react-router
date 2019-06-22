@@ -16,7 +16,12 @@ const BasketPage = () => (
             <small class="tile-subtitle text-gray">$ 450</small>
           </div>
           <div class="tile-action">
-            <button class="btn btn-link">
+            <button class="btn btn-link">Agregar uno 
+              <i class="icon icon-more-vert"></i>   
+            </button>
+          </div>
+          <div class="tile-action">
+            <button class="btn btn-link">Eliminar
               <i class="icon icon-more-vert"></i>
             </button>
           </div>
@@ -32,7 +37,12 @@ const BasketPage = () => (
             <small class="tile-subtitle text-gray">$ 450</small>
           </div>
           <div class="tile-action">
-            <button class="btn btn-link">
+            <button class="btn btn-link">Agregar uno
+              <i class="icon icon-more-vert"></i>
+            </button>
+          </div>
+          <div class="tile-action">
+            <button class="btn btn-link">Eliminar
               <i class="icon icon-more-vert"></i>
             </button>
           </div>
@@ -48,7 +58,12 @@ const BasketPage = () => (
             <small class="tile-subtitle text-gray">$ 450</small>
           </div>
           <div class="tile-action">
-            <button class="btn btn-link">
+            <button class="btn btn-link">Agregar uno
+              <i class="icon icon-more-vert"></i>
+            </button>
+          </div>
+          <div class="tile-action">
+            <button class="btn btn-link">Eliminar
               <i class="icon icon-more-vert"></i>
             </button>
           </div>
